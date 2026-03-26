@@ -10,11 +10,15 @@
 
 <body>
     <h1>Rocker Paper Scissors Game</h1>
-    <div class="movements">
+    <div class="options">
+        <div class="movements">
+            <p id="you">You:</p>
+            <p id="cpu">CPU:</p>
+        </div>
         <label for="">Choose your move:</label>
-        <button type="submit" value=1 class="rock"><i class="fa-solid fa-hand-back-fist"></i></button>
-        <button type="submit" value=2 class="paper"><i class="fa-solid fa-hand"></i></button>
-        <button type="submit" value=3 class="scissor"><i class="fa-solid fa-hand-scissors"></i></button>
+        <button type="submit" value="rock" class="rock" onclick="playGame(value)"><i class="fa-solid fa-hand-back-fist"></i></button>
+        <button type="submit" value="paper" class="paper" onclick="playGame(value)"><i class="fa-solid fa-hand"></i></button>
+        <button type="submit" value="scissor" class="scissor" onclick="playGame(value)"><i class="fa-solid fa-hand-scissors"></i></button>
     </div>
     <div class="score">
         <p class="myScore">Your Score: 0</p>
